@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className={styles.item}>
     {/* // phone icon */}
     <div className={styles.callButton}>
-    <Image src="/img/purplescheme.JPG" alt="phone" width="32" height="32" />
+    <Image src="/img/phone.png" alt="phone" width="32" height="32" />
     </div>
     {/* menu links */}
     <div className={styles.texts}>

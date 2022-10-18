@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       Hello 
-      <Image src="/img/purlplescheme.jpg" width="32" height="32" alt= ""/>
+      <Image src="/img/purplescheme.jpg" width="32" height="32" alt= ""/>
       
     </div>
   )

@@ -22,8 +22,16 @@
      /* Align Middle Items with triple space */
     .item:nth-child(2){
         flex: 3;
+        
+    }
+
+    /* Stylize phone  */
+    .callButton{
         background-color: #fff;
     }
+
+     /* Align Middle Items with triple space */
+
 
 
 
