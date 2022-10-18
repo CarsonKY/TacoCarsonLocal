@@ -25,14 +25,33 @@
         
     }
 
-    /* Stylize phone  */
+    /* Stylize phone icon */
     .callButton{
         background-color: #fff;
+        /* create circle */
+        border-radius: 50%;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+
+        
     }
 
-     /* Align Middle Items with triple space */
+     .texts{
+        margin-left: 20px;
+        color: #fff;
 
+     }
+     /* Stylize Place Order */
+     .text:first-child{
+        font-size: 12px;
+        font-weight: 500;
 
+     }
+     .text:last-child{
+        font-style: 20px;
+        font-weight: bold;
+     }
 
 
 
