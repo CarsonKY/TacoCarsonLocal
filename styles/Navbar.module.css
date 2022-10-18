@@ -1,3 +1,33 @@
 .container{
-    background-color: red;
+    height: 100px;
+    padding: 0px;
+    background-color: #755389;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+
 }
+
+    /* Align Order Now */
+
+
+    .item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+
+     /* Align Middle Items with triple space */
+    .item:nth-child(2){
+        flex: 3;
+        background-color: #fff;
+    }
+
+
+
+
+
+    
+

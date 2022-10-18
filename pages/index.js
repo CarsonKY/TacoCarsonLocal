@@ -1,4 +1,6 @@
+// @ts-ignore
 import Head from 'next/head'
+// @ts-ignore
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
@@ -15,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       Hello 
-      <Image src="/img/logo.png" width="320" height="138" alt= ""/>
+      <Image src="/img/purlplescheme.jpg" width="32" height="32" alt= ""/>
       
     </div>
   )
