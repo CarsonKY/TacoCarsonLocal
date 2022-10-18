@@ -30,7 +30,15 @@ const Navbar = () => {
       <li className={styles.listItem}>Contact</li>
       </ul>
     </div>
-    <div className={styles.item}>Temporary</div>
+    <div className={styles.item}>
+      <div className={styles.cart}>
+      
+        {/* find shopping cart icon here */}
+      <Image src="/img/purplescheme.jpg" alt="shoppingcart" width="30px" height="30px" />
+      <div className={styles.counter}>test</div>
+    
+      </div>
+    </div>
     </div>
   );
 };
