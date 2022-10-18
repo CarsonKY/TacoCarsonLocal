@@ -48,6 +48,7 @@
         font-weight: 500;
 
      }
+     /* Stylize Phone Number */
      .text:last-child{
         font-style: 20px;
         font-weight: bold;
