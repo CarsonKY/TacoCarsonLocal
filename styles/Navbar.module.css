@@ -70,7 +70,10 @@
 
         }
      
-
+    /* Stylize and position Shopping cart*/
+        .cart{
+            position: relative;
+        }
 
 
     
