@@ -2,6 +2,7 @@
 import Head from 'next/head'
 // @ts-ignore
 import Image from 'next/image'
+import Featured from '../components/Featured'
 import styles from '../styles/Home.module.css'
 
 
@@ -16,7 +17,7 @@ export default function Home() {
         <meta name="description" content="Best Tacos in Town" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Hello 
+      <Featured/>
       <Image src="/img/purplescheme.jpg" width="32" height="32" alt= ""/>
       
     </div>

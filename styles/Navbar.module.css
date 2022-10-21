@@ -25,6 +25,11 @@
         
     }
 
+    .item:last-child {
+        justify-content: flex-end;
+        padding-right:10px;
+    }
+
     /* Stylize phone icon */
     .callButton{
         background-color: #fff;
