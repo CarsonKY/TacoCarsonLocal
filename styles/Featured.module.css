@@ -1,0 +1,7 @@
+/* Styles for Featured.jsx */
+
+.container{
+    height: calc(100vh - 100px);
+    background-color: red;
+
+}
