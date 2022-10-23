@@ -1,6 +1,6 @@
 // @ts-nocheck
 import Image from "next/image";
-import styles from "../styles/Navbar.module.css"
+import styles from "../styles/Featured.module.css"
 
 // Create Array to load Featured images 
 const Featured = () => {
@@ -12,23 +12,25 @@ const Featured = () => {
   return (
       // Create divs and load container wrapper and imgC styles from CSS
     <div className={styles.container}>
-        <div className={styles.arrowContainer}>
+        <div className={styles.arrowContainer} style={{left:0}}>
     <Image src="/img/arrowl.png" alt="" layout='fill' />
     </div>
     <div className={styles.wrapper}>
-    <div className={styles.imgContainer}>
+    
         {images.map((img, i)  => (
-            // images require width and height, workaround is layout fill for 100% width
-            // No individual ids for images required so using index number for each child for the key
+            <div className={styles.imgContainer} key={i}>
+            {/* // images require width and height, workaround is layout fill for 100% width
+            // No individual ids for images required so using index number for each child for the key */}
 
-            <Image src="/img/featured.png" key={i} alt="" layout='fill'/>
+            <Image src={img}  alt="" layout='fill'/>
+            </div>
             
         ))}
     
+    
     </div>
-    </div>
-    <div className={styles.arrowContainer}>
-    <Image src="/img/arrowr.png" width="512" height="512"alt="" />
+    <div className={styles.arrowContainer} style={{right:0}}>
+    <Image src="/img/arrowr.png" alt="" layout='fill'/>
     </div>
     </div>
   )
