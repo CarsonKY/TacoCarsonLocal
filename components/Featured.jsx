@@ -22,7 +22,7 @@ const Featured = () => {
             {/* No individual ids for images required so using index number for each child for the key */}
         {images.map((img, i)  => (
             <div className={styles.imgContainer} key={i}>
-             <Image src={img}  alt="" layout='fill'/>
+             <Image src={img}  alt="" layout='fill'  objectFit="contain"/>
             </div>
             
         ))}
