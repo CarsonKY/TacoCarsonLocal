@@ -1,12 +1,13 @@
 // @ts-nocheck
 import Image from "next/image";
+import { useState } from "react";
 import styles from "../styles/Featured.module.css"
 
 // Create Array to load Featured images 
 // Project requirement
 const Featured = () => {
     // Usestate hook to rotate images starting with first image
-    const [index, setIndex] = useState(0)
+    const [index, setIndex] = useState (0)
     const images = [
         "/img/featured.png",
         "/img/featured2.png",
@@ -18,9 +19,11 @@ const Featured = () => {
             setIndex(index !== 0 ? index-1 : 2)
         }
             if(direction==="r"){
-                setIndex(index !== 2 ? index+1 : 0
-        )
+                setIndex(index !== 2 ? index+1 : 0)
+                }
     }
+
+    console.log(index)
   return (
     // images require width and height, workaround is layout fill for 100% width
       // Create divs and load container wrapper and imgC styles from CSS
@@ -45,7 +48,7 @@ const Featured = () => {
     <Image src="/img/arrowr.png" alt="" layout='fill'/>
     </div>
     </div>
-  )
-}
+  );
+};
 
-export default Featured
+export default Featured;
