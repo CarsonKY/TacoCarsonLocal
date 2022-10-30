@@ -13,6 +13,7 @@ const Featured = () => {
         "/img/featured2.png",
         "/img/featured3.png",
     ];
+    
 // Conditional rendering when arrow is pressed for picture scrolling
     const handleArrow = (direction) =>{
         if(direction==="l"){
