@@ -10,7 +10,7 @@ const Featured = () => {
     const [index, setIndex] = useState (0)
     const images = [
         "/img/featured.png",
-        "/img/featured2.png",
+        "/img/featured2.jpg",
         "/img/featured3.png",
     ];
 // Conditional rendering when arrow is pressed for picture scrolling
@@ -23,7 +23,7 @@ const Featured = () => {
                 }
     }
 
-    console.log(index)
+    // console.log(index)
   return (
     // images require width and height, workaround is layout fill for 100% width
       // Create divs and load container wrapper and imgC styles from CSS
@@ -33,7 +33,7 @@ const Featured = () => {
         <div className={styles.arrowContainer} style={{left:0}} onClick={()=>handleArrow("l")}>
     <Image src="/img/arrowl.png" alt="" layout='fill' objectFit="contain"/>
     </div>
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} style={{transform:'translateX(${-100*index}vw)'}}>
             {/* No individual ids for images required so using index number for each child for the key */}
         {images.map((img, i)  => (
             <div className={styles.imgContainer} key={i}>
