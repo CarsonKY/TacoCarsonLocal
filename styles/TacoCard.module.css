@@ -8,9 +8,21 @@
     
 }
 
+.title{
+    font-style: 18px;
+    font-weight: bold;
+}
+
+.price{
+    font-style: 18px;
+    font-weight: bold;
+
+}
+
 .desc{
     font-style: 24px;
-    color: #444;
+    text-align: center;
+    color: #777;
     width: 70%;
 }
 

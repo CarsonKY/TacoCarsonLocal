@@ -4,13 +4,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blue;
+    background-color: #333366;
 }
 
 .desc{
     /* Title text below welcome you jpg */
     font-style: 24px;
-    color: yellow;
+    color: #f3f336;
     width: 70%;
 }
 
@@ -21,5 +21,5 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    color:blueviolet
+    color: whitesmoke;
 }
