@@ -21,7 +21,13 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (min-width: 100px) and (max-width: 550px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 1000px) {
     .container {
         width: 50%;
     }
