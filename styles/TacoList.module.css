@@ -1,20 +1,25 @@
 .container{
+    /* Surrounding blank background */
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: blue;
 }
 
 .desc{
+    /* Title text below welcome you jpg */
     font-style: 24px;
-    color: #444;
+    color: yellow;
     width: 70%;
 }
 
 .wrapper{
+    /* Description of items on menu */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    color:blueviolet
 }
