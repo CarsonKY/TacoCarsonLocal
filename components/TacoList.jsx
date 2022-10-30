@@ -1,4 +1,5 @@
 import styles from "../styles/TacoList.module.css"
+import TacoCard from "./TacoCard";
 
 const TacoList = () => {
   return (
@@ -7,6 +8,9 @@ const TacoList = () => {
       <p className={styles.desc}>
           Best Tacos!  Come on In!
       </p>
+      <div className={styles.wrapper}>
+          <TacoCard/>
+      </div>
       </div>
   );
 };

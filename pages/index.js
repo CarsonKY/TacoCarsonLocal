@@ -3,6 +3,7 @@ import Head from 'next/head'
 // @ts-ignore
 import Image from 'next/image'
 import Featured from '../components/Featured'
+import TacoList from '../components/TacoList'
 import styles from '../styles/Home.module.css'
 
 
@@ -18,6 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Featured/>
+      <TacoList/>
       <Image src="/img/purplescheme.jpg" width="32" height="32" alt= ""/>
       
     </div>

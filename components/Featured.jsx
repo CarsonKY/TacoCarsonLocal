@@ -10,7 +10,7 @@ const Featured = () => {
     const [index, setIndex] = useState (0)
     const images = [
         "/img/featured.png",
-        "/img/featured2.jpg",
+        "/img/featured2.png",
         "/img/featured3.png",
     ];
 // Conditional rendering when arrow is pressed for picture scrolling
