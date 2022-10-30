@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #333366;
+    /* background-color: #333366; */
+    background: linear-gradient(109.6deg, rgb(80, 35, 217) 11.2%, rgb(217, 35, 189) 91.1%);
 }
 
 .desc{
@@ -21,5 +22,6 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    color: whitesmoke;
+    font-style: italic;
+    color: #DFFF00;
 }

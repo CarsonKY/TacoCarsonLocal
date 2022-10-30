@@ -2,7 +2,9 @@
 
 .container{
     height: calc(100vh - 100px);
-    background-color: #6f4785;
+    /* background-color: #6f4785; */
+    /* background-color: #871F78; */
+    background-color: #4e06a6;
     overflow: hidden;
 
 }
