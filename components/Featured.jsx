@@ -33,7 +33,7 @@ const Featured = () => {
         <div className={styles.arrowContainer} style={{left:0}} onClick={()=>handleArrow("l")}>
     <Image src="/img/arrowl.png" alt="" layout='fill' objectFit="contain"/>
     </div>
-    <div className={styles.wrapper} style={{transform:'translateX(${-100*index}vw)'}}>
+    <div className={styles.wrapper} style={{transform:`translateX(${-100*index}vw)`}}>
             {/* No individual ids for images required so using index number for each child for the key */}
         {images.map((img, i)  => (
             <div className={styles.imgContainer} key={i}>
