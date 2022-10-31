@@ -12,7 +12,7 @@ const TacoCard = () => {
         <h1 className={styles.title}>Beef Tacos</h1>
         <span className={styles.price}> $3.50</span>
         <p className={styles.desc}>
-        Our signature product.  Beef tacos filled with beef, lettuce and cheese on a flour tortilla
+      Beef tacos filled with beef, lettuce and cheese on a flour tortilla
         </p>
         </div>
   )

@@ -11,12 +11,12 @@ const Navbar = () => {
       <div className={styles.item}>
     {/* // phone icon */}
     <div className={styles.callButton}>
-    {/* <Image src="/img/phone.png" alt="phone" width="32" height="32" /> */}
+    <Image src="/img/tacoicon.png" alt="phone" width="82" height="82" /> */
     </div>
     {/* menu links */}
     <div className={styles.texts}>
-      <div className={styles.text}>PLACE ORDER</div>
-      <div className={styles.text}>502 555 5961</div>
+      <div className={styles.text}>Welcome To</div>
+      <div className={styles.text}>TacoCarson.com!</div>
 </div>
 </div>
     <div className={styles.item}>
@@ -35,7 +35,7 @@ const Navbar = () => {
       
         {/* find shopping cart icon here */}
       <Image src="/img/purplescheme.jpg" alt="shoppingcart" width="30px" height="30px" />
-      <div className={styles.counter}>test</div>
+      <div className={styles.counter}>0</div>
     
       </div>
     </div>

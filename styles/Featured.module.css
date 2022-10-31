@@ -6,6 +6,7 @@
     /* background-color: #871F78; */
     background-color: #4e06a6;
     overflow: hidden;
+    
 
 }
 
@@ -23,7 +24,7 @@
 
 .wrapper {
     width: 300vw;
-    height: 100%;
+    height: 95%;
     display: flex;
     /* Smooth scroll when transitioning feature images */
     transition: all 1.5s ease-in-out;
@@ -34,5 +35,6 @@
     width: 100vw;
     height: 100%;
     position: relative;
+    
 
 }
