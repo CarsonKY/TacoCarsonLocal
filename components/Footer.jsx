@@ -11,10 +11,16 @@ const Footer = () => {
     </div>
     <div className={styles.item}>
     <div className={styles.card}>
+    <h1 className={styles.title}>WE ARE EXCITED FOR YOUR VISIT</h1>
     <h2 className={styles.motto}>
-       We take pride in what we do and it shows in our products
+       <br />We take pride in what we do and it shows in our products
+       
        </h2>
+    <h2 className={styles.thanks}>
+    <br />Thank you for visiting TacoCarson.com!
+      </h2>
        </div>
+
     <div className={styles.card}></div>
       {/* <h1 className={styles.title}>FIND US</h1> */}
       {/* <p className={styles.text}>

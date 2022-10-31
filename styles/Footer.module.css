@@ -11,7 +11,7 @@
 }
 
 .card{
-    flex:1;
+    /* flex:3; */
     padding: 0 20px;
 
 }
@@ -27,4 +27,20 @@
 
 .motto {
     color: beige;
+}
+
+.thanks {
+    color: beige;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 550px) {
+    .item {
+        background-image:none;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 1000px) {
+    .item {
+        background-image:none;
+    }
 }
