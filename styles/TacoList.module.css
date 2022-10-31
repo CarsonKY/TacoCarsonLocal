@@ -10,9 +10,15 @@
 
 .desc{
     /* Title text below welcome you jpg */
-    font-style: 24px;
-    color: #f3f336;
+    font-family: 'Sanchez', serif;
+    font-style: italic;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 3px 3px #000;
     width: 70%;
+    display: flex;
+    
+    justify-content: center;
 }
 
 .wrapper{

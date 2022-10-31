@@ -21,13 +21,13 @@ const Navbar = () => {
 </div>
     <div className={styles.item}>
       <ul className={styles.list}>
-      <li className={styles.listItem}>Home</li>
+      <li className={styles.listItem}><span>Home</span></li>
       {/* <li className={styles.listItem}>Products</li> */}
-      <li className={styles.listItem}>Menu</li>
-      {/* <Image src="/img/logosmall.png" alt="logo" width="220px" height="70px" /> */}
+      <li className={styles.listItem}><span>Menu</span></li>
+      {<Image src="/img/taconavbarlogo.jpg" alt="logo" width="60px" height="40px" /> }
       {/* <li className={styles.listItem}>Specials</li> */}
-      <li className={styles.listItem}>ORDER</li>
-      <li className={styles.listItem}>Contact</li>
+      <li className={styles.listItem}><span>ORDER</span></li>
+      <li className={styles.listItem}><span>Contact</span></li>
       </ul>
     </div>
     <div className={styles.item}>

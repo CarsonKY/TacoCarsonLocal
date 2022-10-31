@@ -10,7 +10,9 @@ const TacoList = () => {
         <Image src="/img/tacocarsonwelcomesyou.PNG" alt="tacocarsonwelcomesyou" width="500px" height="150px" />
       
       <p className={styles.desc}>
-          Best Tacos!  Come on In! Best Tacos!  Come on In! Best Tacos!  Come on In! Best Tacos!  Come on In! Best Tacos!  Come on In! Best Tacos!  Come on In! Best Tacos!  Come on In! Best Tacos!  Come on In! Best Tacos!  Come on In! 
+          We have the best Mexican food in town!
+          
+          
       </p>
       <div className={styles.wrapper}>
           <TacoCard/>
