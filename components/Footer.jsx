@@ -1,11 +1,12 @@
 // @ts-nocheck
 import styles from "../styles/Footer.module.css"
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-      <Image src="/img/tacoicon.png" alt="tacoicon" width="82" height="82" /> 
+      <Image src="/img/insidetacocarson.jpg" objectFit="cover" layout="fill" alt="tacoicon" /> 
 
     </div>
     <div className={styles.item}>
@@ -15,7 +16,32 @@ const Footer = () => {
        </h2>
        </div>
     <div className={styles.card}></div>
-    <div className={styles.card}></div>
+      {/* <h1 className={styles.title}>FIND US</h1> */}
+      {/* <p className={styles.text}>
+        <br />1001 W Main St
+        <br />Louisville KY
+
+      </p> */}
+    <div className={styles.card}>
+    <h1 className={styles.title}>HOURS OF OPERATION</h1>
+    <p className={styles.text}>
+        <br />Monday thru Friday
+        <br />11 AM to 9 PM
+
+      </p>
+      <p className={styles.text}>
+        <br />Saturday and Sunday
+        <br />11 AM to 10 PM
+
+      </p>
+      
+      
+      <p className={styles.text}>
+        <br />Call Us or Order Online!
+        <br />502-585-5595
+
+      </p>
+    </div>
     </div>
     </div>
   );
