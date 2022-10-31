@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className={styles.item}>
     {/* // phone icon */}
     <div className={styles.callButton}>
-    <Image src="/img/tacoicon.png" alt="phone" width="82" height="82" /> */
+    <Image src="/img/tacoicon.png" alt="tacoicon" width="82" height="82" /> 
     </div>
     {/* menu links */}
     <div className={styles.texts}>
@@ -24,7 +24,7 @@ const Navbar = () => {
       <li className={styles.listItem}><span>Home</span></li>
       {/* <li className={styles.listItem}>Products</li> */}
       <li className={styles.listItem}><span>Menu</span></li>
-      {<Image src="/img/taconavbarlogo.jpg" alt="logo" width="170px" height="150px" /> }
+      {<Image src="/img/taconavbarlogo.jpg" alt="logo" width="270px" height="250px" /> }
       {/* <li className={styles.listItem}>Specials</li> */}
       <li className={styles.listItem}><span>ORDER</span></li>
       <li className={styles.listItem}><span>Contact</span></li>
