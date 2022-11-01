@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <Featured/>
       <TacoList/>
-      <Image src="/img/purplescheme.jpg" width="32" height="32" alt= ""/>
+      
       
     </div>
   )

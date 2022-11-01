@@ -1,5 +1,6 @@
 .container {
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
+    
     background-color: #222;
     display: flex;
     
@@ -8,6 +9,11 @@
     flex: 1;
     position: relative;
     display: flex;
+}
+
+.item:last-child{
+justify-content: space-between;
+    padding: 50px;
 }
 
 .card{
@@ -30,7 +36,11 @@
 }
 
 .thanks {
+    
+    font-size: 23px;
     color: beige;
+    font-family: 'Karla';
+    
 }
 
 @media only screen and (min-width: 100px) and (max-width: 550px) {
