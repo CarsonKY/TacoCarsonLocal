@@ -4,6 +4,7 @@ import Image from "next/image";
 import TacoList from "../../../components/TacoList";
 
 
+
 const Product = () => {
     const taco = {
         id: 1,
@@ -14,8 +15,16 @@ const Product = () => {
     
     };
   return <div className={styles.container}>;
+  <div className={styles.left}>;
+  <div className={styles.imgContainer}>
+    <Image src={tacos.img} layout="fill" alt=""/>
+
+  </div>
     </div>
+  <div className={styles.right}></div>;
+    </div>
+ 
  
 };
 
-export default [Product]
+export default Product;
