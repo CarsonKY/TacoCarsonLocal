@@ -30,3 +30,27 @@
     border-bottom: 1px solid #000;
 
 }
+
+.ingredients{
+    display: flex;
+    margin-bottom: 30px;
+
+
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-style: 14px;
+    font-weight: 500;
+
+
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+
+}
+

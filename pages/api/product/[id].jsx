@@ -34,6 +34,19 @@ const Product = () => {
         name="extracheese" 
         className={styles.checkbox} />
 
+    <label htmlFor="extrameat">Extra Meat</label>
+    </div>
+    <div className={styles.option}>
+        <input 
+        type="checkbox" 
+        id="extrameat" 
+        name="extrameat" 
+        className={styles.checkbox} />
+
+    <label htmlFor="extracheese">Extra Cheese</label>
+    </div>
+    <div className={styles.add}>
+        <input type="number" defaultValue={1} className={styles.quantity}/>
     </div>
     </div>
     </div>
