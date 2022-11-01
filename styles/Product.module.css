@@ -17,8 +17,16 @@
     flex: 1;
 }
 
-.imgContainer{
+.imgContainer {
     width: 80%;
     height: 80%;
     position: relative;
+}
+
+.price{
+    color:purple;
+    font-style: 24px;
+    font-weight: 400;
+    border-bottom: 1px solid #000;
+
 }
