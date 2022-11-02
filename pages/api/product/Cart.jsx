@@ -46,10 +46,21 @@ const Cart = () => {
 
         </div>
         <div className={styles.right}></div>
+        <div className={styles.wrapper}>
+            <h2 className={styles.title}>CART TOTAL</h2>
+            <div className={styles.totalText}></div>
+                <b className={styles.totalTextTitle}>Subtotal:</b>$7.00
+                </div>
+          <div className={styles.totalText}>
+            <b className={styles.totalTextTitle}>Tax:</b>$0.42
+          </div>
+          <div className={styles.totalText}>
+            <b className={styles.totalTextTitle}>Total:</b>$7.42
+          </div>
+          <button className={styles.button}>CHECKOUT!</button>
+        </div>
+      
+  );
+};
 
-
-    </div>
-  )
-}
-
-export default Cart
+export default Cart;
