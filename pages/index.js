@@ -3,6 +3,7 @@ import Head from 'next/head'
 // @ts-ignore
 import Image from 'next/image'
 import Featured from '../components/Featured'
+
 import TacoList from '../components/TacoList'
 import styles from '../styles/Home.module.css'
 
