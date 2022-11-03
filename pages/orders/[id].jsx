@@ -34,7 +34,16 @@ const Order = () => {
                     </td>
               </tr>
               </table>
-          <div className={styles.row}></div>
+          <div className={styles.row}>
+            <div className={styles.status}>
+            <Image src="/img/paid.jpg" alt="" width={30} height={30} />
+            <span>Payment</span>
+            <div className={styles.checkedIcon}>
+            <Image src="/img/checked.jpg" alt="" width={20} height={20} />
+            <span>Payment</span>
+            </div>
+            </div>
+            </div>
         </div>
         <div className={styles.right}>
         <div className={styles.wrapper}>
