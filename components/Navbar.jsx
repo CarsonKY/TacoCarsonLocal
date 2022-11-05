@@ -1,6 +1,7 @@
 // @ts-nocheck
 import Image from "next/image";
-import styles from "../styles/Navbar.module.css"
+import styles from "../styles/Navbar.module.css";
+import Link from "next/link";
 
 const Navbar = () => {
 
@@ -24,11 +25,12 @@ const Navbar = () => {
       <li className={styles.listItem}><span>Home</span></li>
         <a href="#"></a>
       {/* <li className={styles.listItem}>Products</li> */}
-      <li className={styles.listItem}><span>Menu</span></li>
-      <a href="#"></a>
+      <li className={styles.listItem}><a href="#featured">Menu</a></li>
+      
       {<Image src="/img/taconavbarlogo.jpg" alt="logo" width="70px" height="50px" /> }
       {/* <li className={styles.listItem}>Specials</li> */}
-      <li className={styles.listItem}><span>ORDER</span></li>
+      <li className={styles.listItem}><Link href="#featured">ORDER</Link></li>
+      {/* <Link href="#featured"></Link> */}
       <a href="#"></a>
       <li className={styles.listItem}><span>Contact</span></li>
       <a href="#"></a>
