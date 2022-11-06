@@ -1,5 +1,5 @@
 // @ts-nocheck
-import styles from "  /styles/Product.module.css"
+import styles from "../../styles/Product.module.css"
 import Image from "next/image";
 
 

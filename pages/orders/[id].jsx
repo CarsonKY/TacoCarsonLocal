@@ -1,5 +1,5 @@
 // @ts-nocheck
-import styles from "../../styles/Order.module.css";
+import styles from "../styles/Order.module.css";
 import Image from "next/image";
 
 const Order = () => {

@@ -27,6 +27,8 @@ return cached.conn
 if (!cached.promise) {
 const opts = {
   bufferCommands: false,
+  useUnifiedTopology: true, 
+  UseNewUrlParser: true
 }
 
 cached.promise = mongoose.connect(MONGO_URL, opts).then((mongoose) => {
