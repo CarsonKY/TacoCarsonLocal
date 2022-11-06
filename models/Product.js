@@ -18,7 +18,7 @@ img: {
         
     },
 prices:{
-    type:[Number],
+    type:Number,
     required: true,
 },
 extraOptions:{
