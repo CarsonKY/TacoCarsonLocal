@@ -1,10 +1,10 @@
 // @ts-nocheck
 import styles from "../styles/TacoList.module.css"
-import TacoCard from "./TacoCard";
+import TacoCard from "./tacoCard";
 import Image from "next/image";
 
 
-const TacoList = () => {
+const TacoList = ({tacoList}) => {
   return (
     <div className={styles.container}>
         <Image src="/img/tacocarsonwelcomesyou.PNG" alt="tacocarsonwelcomesyou" width="500px" height="150px" />
@@ -15,12 +15,10 @@ const TacoList = () => {
           
       </p>
       <div id="tacoList" className={styles.wrapper}>
-          <TacoCard/>
-          <TacoCard/>
-          <TacoCard/>
-          <TacoCard/>
-          <TacoCard/>
-          <TacoCard/>
+          tacoList.map((tacos)) => (
+          <tacoCard/>
+          ))}
+          
       </div>
       </div>
   );
