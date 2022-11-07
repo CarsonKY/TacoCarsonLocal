@@ -1,3 +1,4 @@
+// @ts-ignore
 import axios from "axios";
 // @ts-ignore
 
@@ -22,13 +23,14 @@ export default function Home({tacoList}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Featured/>
-      <TacoList tacoList={TacoList} />
+      <TacoList tacoList={tacoList} />
       
       
     </div>
   )
 }
 
+// Server side rendering
 export const getServerSideProps = async () =>{
   const res = await axios.get("http://localhost:3000/api/products");
   return{
