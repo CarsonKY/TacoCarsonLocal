@@ -5,12 +5,12 @@ import Image from "next/image";
 
 
 
-const TacoCard = () => {
+const TacoCard = (pizza) => {
   return (
     <div className={styles.container}>
-        <Image src="/img/beeftacos.small.jpg" alt="" width="500" height="500"/>  
-        <h1 className={styles.title}>Beef Tacos</h1>
-        <span className={styles.price}> $3.50</span>
+        <Image src={tacos.img} alt="" width="500" height="500"/>  
+        <h1 className={styles.title}>{tacos.title}</h1>
+        <span className={styles.price}> ${tacos.prices}</span>
         <p className={styles.desc}>
       Flour tortillias filled with beef, lettuce and cheese
         </p>

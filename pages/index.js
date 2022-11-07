@@ -1,7 +1,7 @@
-// @ts-ignore
-import Head from 'next/head'
-// @ts-ignore
 import axios from "axios";
+// @ts-ignore
+
+import Head from 'next/head'
 // @ts-ignore
 import Image from 'next/image'
 import Featured from '../components/Featured'
@@ -11,7 +11,7 @@ import styles from '../styles/Home.module.css'
 
 
 
-export default function Home({pizzaList}) {
+export default function Home({tacoList}) {
   return (
     <div className={styles.container}>
       {/* import JSX components */}
@@ -33,7 +33,7 @@ export const getServerSideProps = async () =>{
   const res = await axios.get("http://localhost:3000/api/products");
   return{
     props:{
-      tacosList:res.data,
+      tacoList:res.data,
     },
   };
 };
