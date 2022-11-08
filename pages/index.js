@@ -9,10 +9,11 @@ import Featured from '../components/Featured'
 
 import TacoList from '../components/TacoList'
 import styles from '../styles/Home.module.css'
+import { useState } from "react"
 
 
 
-export default function Home({TacoList}) {
+export default function Home({tacoList}) {
   return (
     <div className={styles.container}>
       {/* import JSX components */}
@@ -23,7 +24,7 @@ export default function Home({TacoList}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Featured/>
-      <TacoList TacoList={TacoList} />
+      <TacoList tacoList={tacoList} />
       
       
     </div>
@@ -35,7 +36,7 @@ export const getServerSideProps = async () =>{
   const res = await axios.get("http://localhost:3000/api/products");
   return{
     props:{
-      TacoList:res.data,
+      tacoList:res.data,
     },
   };
 };

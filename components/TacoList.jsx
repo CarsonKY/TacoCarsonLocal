@@ -4,7 +4,7 @@ import TacoCard from "./TacoCard";
 import Image from "next/image";
 
 
-const TacoList = ({TacoList}) => {
+const TacoList = ({tacoList}) => {
   return (
     <div className={styles.container}>
         <Image src="/img/tacocarsonwelcomesyou.PNG" alt="tacocarsonwelcomesyou" width="500px" height="150px" />
@@ -15,7 +15,7 @@ const TacoList = ({TacoList}) => {
           
       </p>
       <div id="tacoListid" className={styles.wrapper}>
-          {TacoList.map((tacos) => {
+          {tacoList.map((tacos) => {
             return (
               <TacoCard key={tacos._id} tacos={tacos} />
             );

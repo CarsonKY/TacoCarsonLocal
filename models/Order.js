@@ -36,6 +36,6 @@ method:{
 // If already open don't reopen
 
 export default mongoose.models.Order || 
-    mongoose.model("Order", OrderSchema)
+    mongoose.model("Order", OrderSchema);
 
-{timestamps: true }
+
