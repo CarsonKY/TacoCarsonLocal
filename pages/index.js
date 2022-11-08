@@ -7,12 +7,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Featured from '../components/Featured'
 
-import TacoList from '../components/tacoList'
+import TacoList from '../components/TacoList'
 import styles from '../styles/Home.module.css'
 
 
 
-export default function Home({tacoList}) {
+export default function Home({TacoList}) {
   return (
     <div className={styles.container}>
       {/* import JSX components */}
@@ -23,7 +23,7 @@ export default function Home({tacoList}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Featured/>
-      <TacoList tacoList={tacoList} />
+      <TacoList TacoList={TacoList} />
       
       
     </div>
@@ -35,7 +35,7 @@ export const getServerSideProps = async () =>{
   const res = await axios.get("http://localhost:3000/api/products");
   return{
     props:{
-      tacoList:res.data,
+      TacoList:res.data,
     },
   };
 };

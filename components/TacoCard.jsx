@@ -5,7 +5,7 @@ import Image from "next/image";
 
 
 
-const TacoCard = (pizza) => {
+const TacoCard = (tacos) => {
   return (
     <div className={styles.container}>
         <Image src={tacos.img} alt="" width="500" height="500"/>  

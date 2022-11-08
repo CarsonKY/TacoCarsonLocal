@@ -25,7 +25,7 @@ extraOptions:{
     type:[
         {
             text: { type:String, required:true }, 
-    price: {type:Number, required:true},
+    prices: {type:Number, required:true},
 },
 ],
       
