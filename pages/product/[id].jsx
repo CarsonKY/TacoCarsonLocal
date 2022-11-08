@@ -1,10 +1,10 @@
 import styles from "../../styles/Product.module.css";
 // @ts-ignore
 import Image from "next/image";
-import { useState } from "react";
+
 
 const Product = () => {
-  const [size, setSize] = useState(0);
+  
   const tacos = {
     id: 1,
     img: "/img/beefburrito.large.jpg",
