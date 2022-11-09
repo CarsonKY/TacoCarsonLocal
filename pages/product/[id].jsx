@@ -1,7 +1,8 @@
 import styles from "../../styles/Product.module.css";
 // @ts-ignore
 import Image from "next/image";
-import axios from "../../node_modules/axios/index";
+// @ts-ignore
+import axios from "axios";
 
 
 
@@ -66,7 +67,7 @@ const Product = ({tacos}) => {
 
 // Server side rendering fetching single product
 export const getServerSideProps = async ({params}) =>{
-  const res = await axios.get(`http://localhost:3000/api/products/$/{params}`);
+  const res = await axios.get(`http://localhost:3000/api/products/$/{params.id}`);
   return{
     props:{
       tacos:res.data,
