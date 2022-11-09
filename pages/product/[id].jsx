@@ -22,7 +22,7 @@ const Product = ({tacos}) => {
         <p className={styles.desc}>{tacos.desc}</p>
         
         
-        <h3 className={styles.choose}>Choose additional ingredients</h3>
+        <h3 className={styles.choose}>Upgrade your item!</h3>
         
         <div className={styles.ingredients}>
         {tacos.extraOptions.map((option) => (
@@ -38,7 +38,7 @@ const Product = ({tacos}) => {
         ))}
         </div>
         <div className={styles.add}>
-            <input type="number" defaultValue={1} className={styles.quantity}/>
+            <input type="number" defaultValue={1} className={styles.quantity}/><b>How many?</b>
             <button className={styles.button}>Add to Cart</button>
         </div>
       </div>
