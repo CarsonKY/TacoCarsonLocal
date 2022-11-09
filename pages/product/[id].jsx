@@ -17,44 +17,25 @@ const Product = ({tacos}) => {
         </div>
       </div>
       <div className={styles.right}>
-        <h1 className={styles.title}>{tacos.name}</h1>
-        <span className={styles.prices}>${styles.prices}</span>
+        <h1 className={styles.title}>{tacos.title}</h1>
+        <span className={styles.prices}>${tacos.prices}</span>
         <p className={styles.desc}>{tacos.desc}</p>
         
         
         <h3 className={styles.choose}>Choose additional ingredients</h3>
+        
         <div className={styles.ingredients}>
-          <div className={styles.option}>
+        {tacos.extraOptions.map((option) => (
+          <div className={styles.option} key={option._id}>
             <input
               type="checkbox"
               id="double"
               name="double"
               className={styles.checkbox}
             />
-            <label htmlFor="double">Double Ingredients</label>
+            <label htmlFor="double">{option.text}</label>
           </div>
-          <div className={styles.option}>
-            <input
-              className={styles.checkbox}
-              type="checkbox"
-              id="cheese"
-              name="cheese"
-            />
-            <label htmlFor="cheese">Extra Cheese</label>
-          </div>
-          <div className={styles.option}>
-            <input
-              className={styles.checkbox}
-              type="checkbox"
-              id="spicy"
-              name="spicy"
-            />
-            <label htmlFor="spicy">Spicy Sauce</label>
-          </div>
-          <div className={styles.option}>
-          
-          
-          </div>
+        ))}
         </div>
         <div className={styles.add}>
             <input type="number" defaultValue={1} className={styles.quantity}/>
