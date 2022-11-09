@@ -18,7 +18,7 @@ const Product = ({tacos}) => {
       </div>
       <div className={styles.right}>
         <h1 className={styles.title}>{tacos.name}</h1>
-        <span className={styles.prices}>$</span>
+        <span className={styles.prices}>${styles.prices}</span>
         <p className={styles.desc}>{tacos.desc}</p>
         
         
@@ -66,13 +66,15 @@ const Product = ({tacos}) => {
 };
 
 // Server side rendering fetching single product
-export const getServerSideProps = async ({params}) =>{
-  const res = await axios.get(`http://localhost:3000/api/products/$/{params.id}`);
-  return{
-    props:{
-      tacos:res.data,
+export const getServerSideProps = async ({ params }) => {
+  const res = await axios.get(
+    `http://localhost:3000/api/products/${params.id}`
+  );
+  return {
+    props: {
+      tacos: res.data,
     },
   };
 };
 
-
+export default Product;
