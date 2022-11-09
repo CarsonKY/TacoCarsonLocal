@@ -1,18 +1,13 @@
 import styles from "../../styles/Product.module.css";
 // @ts-ignore
 import Image from "next/image";
+import axios from "../../node_modules/axios/index";
 
 
-const Product = () => {
+
+const Product = ({tacos}) => {
   
-  const tacos = {
-    id: 1,
-    img: "/img/beefburrito.large.jpg",
-    name: "Beef Burrito",
-    prices: [3.50],
-    desc: "Beef Burrito",
-  };
-
+  
   return (
     <div className={styles.container}>
       <div className={styles.left}>
@@ -69,5 +64,14 @@ const Product = () => {
   );
 };
 
-export default Product;
+// Server side rendering fetching single product
+export const getServerSideProps = async ({params}) =>{
+  const res = await axios.get(`http://localhost:3000/api/products/$/{params}`);
+  return{
+    props:{
+      tacos:res.data,
+    },
+  };
+};
+
 
