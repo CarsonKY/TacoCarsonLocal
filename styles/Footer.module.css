@@ -31,6 +31,18 @@ justify-content: space-between;
     color: lightgray;
 }
 
+.textStreet {
+    color: lightgray;
+}
+
+.textPhone {
+    font-style:20px;
+    color: #b7903c;
+    font-weight: bold;
+    text-shadow: 3px 3px rgb(37, 80, 114);
+}
+
+
 .motto {
     color: beige;
 }
@@ -42,6 +54,8 @@ justify-content: space-between;
     font-family: 'Karla';
     
 }
+
+
 
 @media only screen and (min-width: 100px) and (max-width: 550px) {
     .item {

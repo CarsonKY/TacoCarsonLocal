@@ -22,18 +22,18 @@ const Navbar = () => {
 </div>
     <div className={styles.item}>
       <ul className={styles.list}>
-      <li className={styles.listItem}><span>Home</span></li>
-        <a href="#"></a>
-      {/* <li className={styles.listItem}>Products</li> */}
-      <li className={styles.listItem}><a href="#featured">Menu</a></li>
+      <li className={styles.listItem}><Link href="/">Home</Link></li>
+      
+      
+      <li className={styles.listItem}><Link href="/#tacoListMap">Menu</Link></li>
       
       {<Image src="/img/taconavbarlogo.jpg" alt="logo" width="70px" height="50px" /> }
-      {/* <li className={styles.listItem}>Specials</li> */}
-      <li className={styles.listItem}><Link href="#featured">ORDER</Link></li>
-      {/* <Link href="#featured"></Link> */}
-      <a href="#"></a>
-      <li className={styles.listItem}><span>Contact</span></li>
-      <a href="#"></a>
+      
+      <li className={styles.listItem}><Link href="#">ORDER</Link></li>
+      {/* <Link href="/#featured`"></Link> */}
+      
+      <li className={styles.listItem}><Link href="/#footerMap">Contact</Link></li>
+      
       </ul>
     </div>
     <div className={styles.item}>

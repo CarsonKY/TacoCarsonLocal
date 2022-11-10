@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className={styles.container}>
+    <div id = "footerMap" className={styles.container}>
       <div className={styles.item}>
       <Image src="/img/insidetacocarson.jpg"  layout="fill" alt="tacoicon" /> 
 
@@ -42,8 +42,13 @@ const Footer = () => {
       </p>
       
       
-      <p className={styles.text}>
-        <br />Call Us or Order Online!
+      <p className={styles.textStreet}>
+        <br />101 E Main Street, Louisville KY 40272
+        <br />
+      </p>
+        
+      <p className={styles.textPhone}>
+      <br />CALL US
         <br />502-585-5595
 
       </p>

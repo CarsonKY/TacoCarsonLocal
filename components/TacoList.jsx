@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const TacoList = ({tacoList}) => {
   return (
-    <div className={styles.container}>
+    <div id="tacoListMap" className={styles.container}>
         <Image src="/img/tacocarsonwelcomesyou.PNG" alt="tacocarsonwelcomesyou" width="500px" height="150px" />
       
       <p className={styles.desc}>
