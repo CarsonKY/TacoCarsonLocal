@@ -17,6 +17,7 @@ const Product = ({tacos}) => {
         </div>
       </div>
       <div className={styles.right}>
+      <br></br><br></br><br></br><br></br>
         <h1 className={styles.title}>{tacos.title}</h1>
         <span className={styles.prices}>${tacos.prices}</span>
         <p className={styles.desc}>{tacos.desc}</p>
