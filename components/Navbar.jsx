@@ -29,12 +29,14 @@ const Navbar = () => {
       
       {<Image src="/img/taconavbarlogo.jpg" alt="logo" width="70px" height="50px" /> }
       
-      <li className={styles.listItem}><Link href="#">ORDER</Link></li>
+      <li className={styles.listItem}><span title="Future addon"><Link href="#">ORDER</Link></span></li>
+      )
       {/* <Link href="/#featured`"></Link> */}
       
       <li className={styles.listItem}><Link href="/#footerMap">Contact</Link></li>
       
       </ul>
+      
     </div>
     <div className={styles.item}>
       <div className={styles.cart}>
