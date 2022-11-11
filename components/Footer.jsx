@@ -1,12 +1,17 @@
 // @ts-nocheck
 import styles from "../styles/Footer.module.css"
-import Image from "next/image";
+import Image from "next/image"
+
+
+
 
 const Footer = () => {
   return (
     <div id = "footerMap" className={styles.container}>
       <div className={styles.item}>
-      <Image src="/img/insidetacocarson.jpg"  layout="fill" alt="tacoicon" /> 
+      <Image id ="bkimg" src="/img/insidetacocarson.jpg"  layout="fill" objectfit="cover" alt="tacoicon" /> 
+      
+      
 
     </div>
     <div className={styles.item}>

@@ -45,6 +45,7 @@ justify-content: space-between;
 
 .motto {
     color: beige;
+    
 }
 
 .thanks {
@@ -57,14 +58,21 @@ justify-content: space-between;
 
 
 
-@media only screen and (min-width: 100px) and (max-width: 550px) {
-    .item {
-        background-image:none;
+@media only screen and (min-width: 100px) and (max-width: 1050px) {
+
+    .title {
+        display: none;
     }
+
+    .motto {
+        display: none;
+    }
+    
+    .thanks {
+        display: none;
+    }
+        
+     
 }
 
-@media only screen and (min-width: 551px) and (max-width: 1000px) {
-    .item {
-        background-image:none;
-    }
-}
+
