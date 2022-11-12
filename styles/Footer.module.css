@@ -60,18 +60,10 @@ justify-content: space-between;
 
 @media only screen and (min-width: 100px) and (max-width: 1050px) {
 
-    .title {
+    .title, .motto, .thanks {
         display: none;
     }
 
-    .motto {
-        display: none;
-    }
-    
-    .thanks {
-        display: none;
-    }
-        
      
 }
 
