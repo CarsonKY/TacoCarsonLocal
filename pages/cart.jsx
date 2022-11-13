@@ -2,11 +2,12 @@ import styles from "../styles/Cart.module.css"
 // @ts-ignore
 import Image from "next/image";
 import {useDispatch, useSelector } from "react-redux"
+import { useEffect, useState } from "react";
 
 // move everything from store to cart
 const Cart = () => {
     const dispatch = useDispatch();
-    const cart = useSelector(state=>state.cart)
+    const cart = useSelector((state) => state.cart);
     
   return (
     <div className={styles.container}>
@@ -38,17 +39,17 @@ const Cart = () => {
                             {product.extras.map(extra=>(
                                 <span key={extra._id}>{extra.text},</span>
                             ))}
-                            Double meat, Extra Cheese
+                            
                         </span>
                     </td>
                     <td>
-                        <span className={styles.price}>{product.price}</span>
+                        <span className={styles.price}>{product.prices}</span>
                     </td>
                     <td>
                         <span className={styles.quantity}>{product.quantity}</span>
                     </td>
                     <td>
-                        <span className={styles.total}>${product.price * product.quantity}</span>
+                        <span className={styles.total}>${product.prices * product.quantity}</span>
                     </td>
               </tr>
               ))}
