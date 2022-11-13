@@ -50,13 +50,13 @@ const Product = ({ tacos }) => {
       <div className={styles.right}>
         <h1 className={styles.title}>{tacos.title}</h1>
         <span className={styles.price}>${tacos.prices}</span>
-        
+        <p className={styles.desc}>{tacos.desc}</p>
         
         
           
         
+          
         
-        </div>
         <h3 className={styles.choose}>Choose additional ingredients</h3>
         <div className={styles.ingredients}>
           {tacos.extraOptions.map((option) => (
@@ -84,6 +84,7 @@ const Product = ({ tacos }) => {
             Add to Cart
           </button>
         </div>
+      </div>
       </div>
     
   );
