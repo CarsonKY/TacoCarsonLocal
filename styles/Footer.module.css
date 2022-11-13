@@ -3,6 +3,9 @@
     
     background-color: #222;
     display: flex;
+    border-top:6px solid; 
+    border-top-color: #b7903c; 
+    
     
 }   
 .item {

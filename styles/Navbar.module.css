@@ -77,33 +77,26 @@
             font-weight: 500;
 
 
-        }
+       }
 
-        .listItem.active{
-            
-                background:rgb(223, 138, 138);
-                color:green;
-                transition: .5s;
-              }
+       
+  
 
 
               .listItem:hover{
             
                 background: rgb(223,138,138);
-                color: darkblue;
-  box-shadow: 10px 25px 25px darkblue;
+                color: purple;
+  box-shadow: 10px 10px 10px black;
                 transition: .5s;
                 
-              }
+              } 
 
-              .listItem:hover{
-            
-                background: rgb(223,138,138);
-                color: darkblue;
-  box-shadow: 10px 25px 25px darkblue;
-                transition: .5s;
-                
-              }
+
+              
+              
+
+             
 
               
                

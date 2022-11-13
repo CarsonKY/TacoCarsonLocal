@@ -9,7 +9,7 @@ import { addProduct } from "../../redux/cartSlice";
 
 const Product = ({ tacos }) => {
   const [price, setPrice] = useState(tacos.prices[0]);
-  const [size, setSize] = useState(0);
+  
   const [quantity, setQuantity] = useState(1);
   const [extras, setExtras] = useState([]);
   const dispatch = useDispatch();
@@ -18,11 +18,11 @@ const Product = ({ tacos }) => {
     setPrice(price + number);
   };
 
-  const handleSize = (sizeIndex) => {
-    const difference = tacos.prices[sizeIndex] - tacos.prices[size];
-    setSize(sizeIndex);
-    changePrice(difference);
-  };
+  // const handleSize = (sizeIndex) => {
+  //   const difference = tacos.prices[sizeIndex] - tacos.prices[size];
+  //   setSize(sizeIndex);
+  //   changePrice(difference);
+  // };
 
   const handleChange = (e, option) => {
     const checked = e.target.checked;
