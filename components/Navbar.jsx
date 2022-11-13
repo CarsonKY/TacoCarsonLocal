@@ -41,15 +41,17 @@ const Navbar = () => {
       </ul>
       
     </div>
+    <Link href="/cart" passHref>
     <div className={styles.item}>
       <div className={styles.cart}>
       
         {/* find shopping cart icon here */}
-      <Image src="/img/purplescheme.jpg" alt="shoppingcart" width="30px" height="30px" />
+      <Image src="/img/cart.png" alt="shoppingcart" width="30px" height="30px" />
       <div className={styles.counter}>{quantity}</div>
     
       </div>
     </div>
+    </Link>
     </div>
   );
 };

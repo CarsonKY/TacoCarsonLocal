@@ -79,10 +79,6 @@
 
        }
 
-       
-  
-
-
               .listItem:hover{
             
                 background: rgb(223,138,138);
@@ -91,15 +87,6 @@
                 transition: .5s;
                 
               } 
-
-
-              
-              
-
-             
-
-              
-               
      
     /* Stylize and position Shopping cart*/
         .cart{
