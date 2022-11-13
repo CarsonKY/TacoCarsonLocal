@@ -1,9 +1,12 @@
 // @ts-nocheck
 import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
+import { useSelector } from "react-redux";
 import Link from "next/link";
 
 const Navbar = () => {
+
+ const quantity = useSelector(state=>state.cart.quantity)
 
   return (
     // Use Navbar.module.css for all styles
@@ -43,7 +46,7 @@ const Navbar = () => {
       
         {/* find shopping cart icon here */}
       <Image src="/img/purplescheme.jpg" alt="shoppingcart" width="30px" height="30px" />
-      <div className={styles.counter}>0</div>
+      <div className={styles.counter}>{quantity}</div>
     
       </div>
     </div>

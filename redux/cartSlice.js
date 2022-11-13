@@ -14,6 +14,9 @@ const cartSlice = createSlice({
       state.quantity += 1;
       state.total += action.payload.price * action.payload.quantity;
     },
+
+    //reset cart after payload complete 
+    
     reset: (state) => {
       state.products = [];
       state.quantity = 0;
