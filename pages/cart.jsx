@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 // move everything from store to cart
 const Cart = () => {
     const dispatch = useDispatch();
+    
     const cart = useSelector((state) => state.cart);
     
   return (
@@ -60,18 +61,20 @@ const Cart = () => {
         <div className={styles.wrapper}>
             <h2 className={styles.title}>CART TOTAL</h2>
             <div className={styles.totalText}></div>
-                <b className={styles.totalTextTitle}>Subtotal:</b>${cart.total}
+                <b className={styles.totalTextTitle}>Subtotal:</b>{cart.total}
                 </div>
           <div className={styles.totalText}>
             <b className={styles.totalTextTitle}>Tax:</b>{cart.total * .06}
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Total:</b>{cart.total * .06 + cart.total}
+            <b className={styles.totalTextTitle}>Total:</b>{cart.total}
+            
           </div>
           <button className={styles.button}>CHECKOUT! </button>
         </div>
       
   );
+  
 };
 
 export default Cart;
