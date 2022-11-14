@@ -20,6 +20,7 @@ const Cart = () => {
             <th>Total</th>
           </tr>
           {cart.products.map(product=>(
+              
           <tr className={styles.tr} key={product._id}>
             <td>
               <div className={styles.imgContainer}>
@@ -66,7 +67,8 @@ const Cart = () => {
             <b className={styles.totalTextTitle}>Discount:</b>$0.00
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Total:</b>$79.60
+            <b className={styles.totalTextTitle}>Total:</b>$15.60
+            {/* {cart.total} */}
           </div>
           <button className={styles.button}>CHECKOUT NOW!</button>
         </div>
