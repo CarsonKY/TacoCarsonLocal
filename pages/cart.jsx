@@ -17,7 +17,7 @@ import { reset } from "../redux/cartSlice";
 
 const Cart = () => {
     const [open, setOpen] = useState(false);
-    const amount = "15.60";
+    const amount = "8.00";
 const currency = "USD";
 const style = {"layout":"vertical"};
 
@@ -143,7 +143,7 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
             <b className={styles.totalTextTitle}>Discount:</b>$0.00
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Total:</b>$15.60
+            <b className={styles.totalTextTitle}>Total:</b>$8.00
             {/* {cart.total} */}
           </div>
           {open ? (
@@ -163,7 +163,7 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
 			</PayPalScriptProvider>
 
           ) : (
-          <button onClick={()=>setOpen(true)} className={styles.button}>PLACE ORDER!</button>
+          <button onClick={()=>setOpen(true)} className={styles.button}>PLACE ORDER</button>
           )}
           
         </div>

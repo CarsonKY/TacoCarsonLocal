@@ -32,7 +32,7 @@ const Navbar = () => {
       
       {<Image src="/img/taconavbarlogo.jpg" alt="logo" width="70px" height="50px" /> }
       
-      <li className={styles.listItem}><span title="Future addon"><Link href="/cart">Order</Link></span></li>
+      <li className={styles.listItem}><Link href="/cart">Order</Link></li>
       
       
       
