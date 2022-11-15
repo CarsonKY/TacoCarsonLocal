@@ -63,10 +63,12 @@ justify-content: space-between;
 
 @media only screen and (min-width: 100px) and (max-width: 1050px) {
 
-    .title, .motto, .thanks {
+     .item:first-child{
         display: none;
     }
-
+.item{
+    flex-direction: column;
+}
      
 }
 
