@@ -140,7 +140,7 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
 
 <PayPalScriptProvider
                 options={{
-                    "client-id": "test",
+                    "client-id": "AXGKVDt_2Wh6CFCLvs6i7BPWYBUQaLZ8lJaupL-1ugKjiAa7_3Dt-HddvZhSipwUTMzrpZ6XBkNvnUyL",
                     components: "buttons",
                     currency: "USD",
                     "disable-funding": "credit,card,p24",
