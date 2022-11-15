@@ -7,7 +7,9 @@ import {
     PayPalScriptProvider,
     PayPalButtons,
     usePayPalScriptReducer
+// @ts-ignore
 } from "@paypal/react-paypal-js";
+import { reset } from "../redux/cartSlice";
 
 // This values are the props in the UI
 
@@ -20,6 +22,7 @@ const currency = "USD";
 const style = {"layout":"vertical"};
 
     const dispatch = useDispatch()
+    // @ts-ignore
     const cart = useSelector((state)=>state.cart);
 
 // Custom component to wrap the PayPalButtons and handle currency changes
@@ -36,6 +39,8 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
                 currency: currency,
             },
         });
+        
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currency, showSpinner]);
 
 
@@ -65,6 +70,7 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
                 }}
                 onApprove={function (data, actions) {
                     return actions.order.capture().then(function () {
+                        
                         // Your code here after capture the order
                     });
                 }}
@@ -77,6 +83,7 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
     <div className={styles.container}>
       <div className={styles.left}>
         <table className={styles.table}>
+            <tbody>
           <tr className={styles.trTitle}>
             <th>Product</th>
             <th>Name</th>
@@ -85,6 +92,8 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
             <th>Quantity</th>
             <th>Total</th>
           </tr>
+          </tbody>
+          <tbody>
           {cart.products.map(product=>(
               
           <tr className={styles.tr} key={product._id}>
@@ -120,6 +129,7 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
             </td>
           </tr>
           ))}
+          </tbody>
         </table>
       </div>
       <div className={styles.right}>
