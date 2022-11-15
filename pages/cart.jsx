@@ -2,7 +2,7 @@ import styles from "../styles/Cart.module.css";
 // @ts-ignore
 import Image from "next/image";
 import { useDispatch, useSelector} from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
     PayPalScriptProvider,
     PayPalButtons,
@@ -14,7 +14,8 @@ import {
 
 
 const Cart = () => {
-    const amount = "2";
+    const [open, setOpen] = useState(false);
+    const amount = "15.60";
 const currency = "USD";
 const style = {"layout":"vertical"};
 
@@ -135,12 +136,14 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
             <b className={styles.totalTextTitle}>Total:</b>$15.60
             {/* {cart.total} */}
           </div>
-          <button className={styles.button}>PLACE ORDER!</button>
-          <PayPalScriptProvider
+          {open ? (
+
+<PayPalScriptProvider
                 options={{
                     "client-id": "test",
                     components: "buttons",
-                    currency: "USD"
+                    currency: "USD",
+                    "disable-funding": "credit,card,p24",
                 }}
             >
 				<ButtonWrapper
@@ -148,6 +151,11 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
                     showSpinner={false}
                 />
 			</PayPalScriptProvider>
+
+          ) : (
+          <button onClick={()=>setOpen(true)} className={styles.button}>PLACE ORDER!</button>
+          )}
+          
         </div>
       </div>
     </div>
