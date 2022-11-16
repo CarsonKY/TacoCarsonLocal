@@ -33,7 +33,8 @@ export default function Home({tacoList}) {
 
 // Server side rendering
 export const getServerSideProps = async () =>{
-  const res = await axios.get("https://tacocarson.vercel.app");
+  // const res = await axios.get("https://tacocarson.vercel.app");
+  const res = await axios.get("https://tacocarson.vercel.app/api/products");
   return{
     props:{
       tacoList:res.data,
