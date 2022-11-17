@@ -92,7 +92,7 @@ const Product = ({ tacos }) => {
 
 export const getServerSideProps = async ({ params }) => {
   const res = await axios.get(
-    `https://tacocarson.vercel.app/api/products/${params.id}`
+    `https://tacocarson.netlify.app/api/products/${params.id}`
     
   );
   return {
