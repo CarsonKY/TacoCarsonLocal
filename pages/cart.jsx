@@ -125,7 +125,8 @@ const ButtonWrapper = ({ currency, showSpinner }) => {
               <span className={styles.quantity}>{product.quantity}</span>
             </td>
             <td>
-              <span className={styles.total}>${product.prices * product.quantity}</span>
+              
+      <span className={styles.total}>${(product.prices * product.quantity *1).toFixed(2)}</span> 
             </td>
           </tr>
           ))}
