@@ -110,7 +110,7 @@ yarn dev
 
 - __React:__ Built on React
 
-- __React Redux+Toolkit:__ Cart manipulation
+- __React Redux+Toolkit:__ Easier cart manipulation
 
 - __Next.JS:__ Used for creating links and image rendering much easier
 
