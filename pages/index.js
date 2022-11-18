@@ -8,6 +8,7 @@ import Image from 'next/image'
 import Featured from '../components/Featured'
 
 import TacoList from '../components/TacoList'
+// @ts-ignore
 import styles from '../styles/Home.module.css'
 import { useState } from "react"
 
@@ -34,7 +35,7 @@ export default function Home({tacoList}) {
 // Server side rendering
 export const getServerSideProps = async () =>{
   // const res = await axios.get("https://tacocarson.vercel.app");
-  const res = await axios.get("https://tacocarson.netlify.app/api/products");
+  const res = await axios.get("http://localhost:3000/api/products");
   return{
     props:{
       tacoList:res.data,
