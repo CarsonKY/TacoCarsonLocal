@@ -1,4 +1,4 @@
-<h1 align="center">Taco Carson</h1>
+<h1 align="center">Taco Carson Local Install Repo</h1>
 
 <div align="center">
   <strong>A server side rendered ordering system for a restaurant utilizing sandbox payment systems</strong>
@@ -57,7 +57,7 @@
   
   You will also need to follow the directions below to install and run locally.
 
-   The project is 97% done.  The to do list includes getting the grand total state from all items calculated and sent to the store for global use.   For the time being the grand total value is set for $8 regardless of the order and Paypal is set to pay that amount.  Additonally, paypal currently will not route the page and update the cart after purchase.
+   The project is 97% done.  The to do list includes getting the grand total state from all items calculated and sent to the store for global use.   For the time being the grand total value is set for $8 regardless of the order and Paypal is set to pay that amount.  Additionally, paypal currently will not route the page and update the cart after purchase.
 
   The three project requirements I ended up using are:
 
@@ -70,7 +70,7 @@
 
 ## Local Installation Instructions
 
-  The files in this repo point to the netlify server and can't be launched locally as is.  The morning of submission, I created a new repo called TacoCarsonLocal.  These files have the API pointed correctly when running and are ready to be run locally. <a href=https://code.visualstudio.com>Visual Studio Code</a> and <a href=https://www.google.com/chrome>Google Chrome</a> are recommend for this app.  After they are downloaded and installed, launch VS Code and pull down the code into a directory with this command in the terminal.
+  The morning of submission, I created a new repo called TacoCarsonLocal which is a clone of TacoCarson with the exception of changing the API URLs to localhost. <a href=https://code.visualstudio.com>Visual Studio Code</a> and <a href=https://www.google.com/chrome>Google Chrome</a> are recommend for this app.  After they are downloaded and installed, launch VS Code and pull down the code into a directory with this command in the terminal.
 
 
   ```js
@@ -110,9 +110,11 @@ yarn dev
 
 - __React:__ Built on React
 
-- __React Redux+Toolkit:__ Easier cart manipulation
+- __Next.JS:__ Used for state management and making links and image rendering much easier
 
-- __Next.JS:__ Used for creating links and image rendering much easier
+- __React Redux+Toolkit:__ Cart manipulation
+
+
 
 - __MongoDB:__ Used custom built API for server side rendering of images and menu items
 
